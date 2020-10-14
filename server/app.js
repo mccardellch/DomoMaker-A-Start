@@ -17,7 +17,7 @@ const dbURL = process.env.MONGODB_URI || 'mongodb://localhost/DomoMaker';
 
 // Setup mongoose options to use newer functionality
 const mongooseOptions = {
-  useNewUrlParse: true,
+  useNewUrlParser: true,
   useUnifiedTopology: true,
 };
 
