@@ -38,7 +38,8 @@ $(document).ready(() => {
       handleError("RAWR! Passwords do not match");
       return false;           
     }
-
+    
+    // call sendAjax(action, data) - POST, username=value&pass=value&pass2=value
     sendAjax($("#signupForm").attr("action"), $("#signupForm").serialize());
 
     return false;
@@ -53,7 +54,8 @@ $(document).ready(() => {
       handleError("RAWR! Username or password is empty");
       return false;
     }
-
+    
+    // call sendAjax(action, data)
     sendAjax($("#loginForm").attr("action"), $("#loginForm").serialize());
 
     return false;
@@ -68,7 +70,8 @@ $(document).ready(() => {
       handleError("RAWR! All fields are required");
       return false;
     }
-
+    
+    // call sendAjax(action, data)
     sendAjax($("#domoForm").attr("action"), $("#domoForm").serialize());
 
     return false;

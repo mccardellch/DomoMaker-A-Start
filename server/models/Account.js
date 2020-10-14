@@ -47,6 +47,11 @@ const validatePassword = (doc, password, callback) => {
   });
 };
 
+// Methods attached as AccountSchema.statics
+// anything attached to a shcema in .statics is a method you can call through the Model
+// i.e. static function in OOP
+
+// called by AccountModel.findByUsername
 AccountSchema.statics.findByUsername = (name, callback) => {
   const search = {
     username: name,
