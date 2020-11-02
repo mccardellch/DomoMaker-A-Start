@@ -81,6 +81,10 @@ const signup = (request, response) => {
   }); // end return generateHash
 }; // end signup
 
+const settingsPage = (req, res) => {
+  res.render('settings');
+};
+
 const getToken = (request, response) => {
   const req = request;
   const res = response;
@@ -96,4 +100,5 @@ module.exports.loginPage = loginPage;
 module.exports.login = login;
 module.exports.logout = logout;
 module.exports.signup = signup;
+module.exports.settingsPage = settingsPage;
 module.exports.getToken = getToken;
