@@ -100,5 +100,5 @@ module.exports.loginPage = loginPage;
 module.exports.login = login;
 module.exports.logout = logout;
 module.exports.signup = signup;
-module.exports.settingsPage = settingsPage;
+module.exports.settings = settingsPage;
 module.exports.getToken = getToken;
